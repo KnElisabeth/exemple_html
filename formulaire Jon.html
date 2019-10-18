@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaire</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+        <h2>Ceci est un menu de navigation</h2>
+        <ul>
+            <li><a href="./index.html" target="_blank">Index</a></li>
+            <li><a href="./formulaire.html" target="_blank">Formulaire</a></li>
+            <li><a href="./evenement.html" target="_blank">Évènement</a></li>               
+        </ul>
+        </div>
+        <div class="logo"> 
+            <a href="https://vignette.wikia.nocookie.net/skylanders-fan/images/7/71/Mario_troll_face_by_jsorigins-d5a1jw8.png/revision/latest?cb=20150308043550" target="_blank">
+            <img src="./pictures/logo.png" title="logo" alt="super_logo" />
+            </a>
+        </div>
+    </header>
+    <main>
+        <h1>C'est la page Formulaire</h1>
+        <h2>Veuillez entrer vos information de connexion</h2>
+
+    <form method="POST" action="./valide.html" target="_blank" >
+        <fieldset>
+            <legend>Vos information de connexion</legend>
+            <label for="pseudo">Votre identifiant</label><br /><input type="text" placeholder="Entrez votre identifiant" name="pseudo"/><br />
+            <label for="email">Vos contact</label><br /><input type="email" placeholder="Entrez votre e-mail" name="email"/><br />
+            <label for="password">Mot de passe</label><br /><input type="password" placeholder="Entrez votre mdp" name="password"/><br />
+            <label name="newsletterchoice"> Voulez-vous s'abonner à la newsletter </label><br />
+            <input type="radio" name="newsletterchoice" value="Yes" id="Yes" checked /> <label for="Yes" >Oui</label><br />
+            <input type="radio" name="newsletterchoice" value="No" id="No" /> <label for="No">Non</label><br />
+
+        </fieldset>
+        <fieldset>
+            <legend>Vos informations personnelles</legend>
+            <p>
+                <label for="pays">Dans quel pays habitez vous ?</label><br>
+                <select name="pays" id="pays">
+                    <optgroup label="Europe">
+                        <option value="france">France</option>
+                        <option value="espagne">Espagne</option>
+                        <option value="italie">Italie</option>
+                        <option value="uk">Angleterre</option>
+                        <option value="allemagne">France</option>
+                    </optgroup>
+                    <optgroup label="Afrique">
+                        <option value="sout_africa">Afrique du sud</option>
+                        <option value="nigéria">Nigéria</option>
+                        <option value="congo">Congo</option>
+                        <option value="gabon">Gabon</option>
+                        <option value="ethiopie">Éthiopie</option>
+                    </optgroup>
+                    <optgroup label="Amérique">
+                        <option value="usa">États-Unis</option>
+                        <option value="canada">Canada</option>
+                        <option value="mexique">Méxique</option>
+                        <option value="bresil">Brésil</option>
+                        <option value="chili">Chili</option>
+                    </optgroup>
+                </select>
+            </p><br>
+            <p>
+                <label for="age">Quel âge avez-vous?</label><br>
+                <input type="radio" name="age" value="less_15" id="less_15"><label for="less_15">Moin de 15 ans</label><br>
+                <input type="radio" name="age" value="15_30" id="15_30"><label for="15_30">Entre 15 et 30 ans</label><br>
+                <input type="radio" name="age" value="30_45" id="30_45"><label for="30_45">Entre 30 et 45 ans</label><br>
+                <input type="radio" name="age" value="more_45" id="more_45"><label for="more_45">Si vieux que ça</label><br>
+            </p><br>
+            <p>    
+                <label for="favorite_meal">Qu'est ce que vous aimez? (plusieurs choix possibles</label><br>
+                <input type="checkbox" name="favorite_meal" value="tartiflette" id="tartiflette"><label for="tartiflette">Tartiflette</label><br>
+                <input type="checkbox" name="favorite_meal" value="aligot" id="aligot"><label for="aligot">Aligot</label><br>
+                <input type="checkbox" name="favorite_meal" value="raclette" id="raclette"><label for="raclette">Raclette</label><br>
+                <input type="checkbox" name="favorite_meal" value="weirdo" id="weirdo"><label for="tartiflette">T'aime pas le fromage ??? t'es chelou toi</label><br>
+            </p>
+                <label for="puke_color">De quel couleur est votre vomis après ces trois plats??</label><br>
+                <input type="color" name="puke_color">
+        </fieldset>
+        <fieldset>
+            <legend>Envoi du formulaire</legend>
+                <br>
+                <div id="suggestion">
+                    <label for="suggestion">Faites remonter votre avis</label><br>
+                    <textarea rows="10" cols="40" placeholder="En vrai je m'en fou de ce que vous pensez"></textarea>
+                </div>
+                <br>
+                <input type="reset" value="Valider">
+                <input type="submit" value="Réinitialiser" >
+        </fieldset>
+
+    </form>
+
+    </main>
+    <footer>
+        <h3>Liste de liens utiles</h3>
+        <ul>
+            <li><a href="http://www.google.fr" target="_blank">GooGle</a></li>
+            <li><a href="https://app.slack.com/client/TNYUM131D/CNX3GQHFX" target="_blank">Le super Slack de la classe</a></li>
+            <li><a href="mailto:quentin.dessartine@gmail.com">Venez demandez des conseil au super développeur</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+</head>
+<body>
+    <form action="./valid.html"> Je suis un pain d'mie
+
+      <label for="firstname">Votre prénom :</label>
+      <input type="text" name="firstname" required>
+
+      <br>
+
+      <label for="age">Votre age</label>
+      <input type="number" name="age" min="0">
+V
+      <br>
+
+      <label for="password">Votre mdp :</label>
+      <input type="password" name="password">
+
+      <br>
+
+      <label for="genre">Votre sexe :</label> <br>
+      <input type="radio" name="genre">Femme <br>
+      <input type="radio" name="genre">Homme <br>
+      <input type="radio" name="genre">Poisson-rouge <br>
+
+      <br>
+
+      <label for="music">Votre style préférés</label><br>
+      <input type="checkbox" name="music">Classique<br>
+      <input type="checkbox" name="music">Pop-Rock<br>
+      <input type="checkbox" name="music">Jazz<br>
+      <input type="checkbox" name="music">Hip-hop<br>
+
+      <label for="date">Votre date préféré :</label>
+      <input type="date" name="date">
+
+      <br>
+
+      <label for="color">Votre couleur :</label>
+      <input type="color" name="color">
+
+      <br>
+
+      <label for="children">Nombre d'enfants :</label>
+      <select name="children">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3+</option>
+      </select>
+
+      <br>
+
+      <input type="submit" value="Ok">
+
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+    </form>
+</body>
+</html>
